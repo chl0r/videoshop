@@ -87,5 +87,9 @@ class CatalogDataInitializer implements DataInitializer {
 		videoCatalog.save(new Disc("Oldboy", "old", Money.of(24.99, EURO), "Action/Drama/Thriller", DiscType.BLURAY));
 		videoCatalog.save(new Disc("Bill & Ted's Excellent Adventure", "bt", Money.of(29.99, EURO),
 				"Adventure/Comedy/Family", DiscType.BLURAY));
+				videoCatalog.save(new Disc("Grand Theft Auto V", "gta5", Money.of(59.99, EURO),
+				"Family", DiscType.PS4));
+				videoCatalog.save(new Disc("Trippy", "fb", Money.of(0.99, EURO),
+				"Family", DiscType.PS4));
 	}
 }

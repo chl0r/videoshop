@@ -69,6 +69,14 @@ class CatalogController {
 
 		return "catalog";
 	}
+	@GetMapping("/PS4")
+	String PS4Catalog(Model model) {
+
+		model.addAttribute("catalog", catalog.findByType(DiscType.PS4));
+		model.addAttribute("title", "catalog.ps4.title");
+
+		return "catalog";
+	}
 
 	// (｡◕‿◕｡)
 	// Befindet sich die angesurfte Url in der Form /foo/5 statt /foo?bar=5 so muss man @PathVariable benutzen
